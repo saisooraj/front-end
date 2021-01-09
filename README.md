@@ -1,2 +1,2 @@
 # front-end
-My journey to front-end development.
+My journey to the front-end development.
