@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="A Technical Documentation Page.css" type="text/css">
+    <title>JavaScript Docs</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>JS Guide</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#what_is_javascript">What Is JavaScript?</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#hello_world">Hello World</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#data_types">Data Types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#conditionals">Conditionals</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#loops">Loops</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#functions">Functions</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#references">References</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="what_is_javascript" class="main-section">
+            <header>What Is JavaScript?</header>
+            <article>
+                <p>
+                    JavaScript is a programming language that adds interactivity to your website. Inside a host environment (for example, a web browser), 
+                    JavaScript can be connected to the objects of its environment to provide programmatic control over them. This happens in games, in the behavior of 
+                    responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc.
+                </p>
+                <p>
+                    JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core 
+                    JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:
+                </p>
+                <ul>
+                    <li>
+                        Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, 
+                        client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, 
+                        and page navigation.
+                    </li>
+                    <li>
+                        Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side 
+                        extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the 
+                        application, or perform file manipulations on a server.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="hello_world" class="main-section">
+            <header>Hello World</header>
+            <article>
+                <p>
+                    JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of 
+                    power and creativity. However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. 
+                    You may have to start small, and progress gradually. To begin, let's create a basic "Hello world!" greeting example.
+                </p>
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                      greetMe("World!");
+                </code>
+                <p>
+                    The function has created a pop up "Hello world!"" using JavaScript. You did this by using a function to alert the "World" property when the function is called.
+                </p>
+            </article>    
+        </section>
+
+        <section id="variables" class="main-section">
+            <header>Variables</header>
+            <article>
+                <p>
+                    You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+                </p>
+                <p>
+                    A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because 
+                    JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+                </p>
+                <p>
+                    JavaScript variables are containers for storing data values, and you can declare a variable in three ways:
+                    In this example x, y, and z, are all declared variables:
+                </p>
+                <code>
+                    var x = 42
+                </code>
+                <code>
+                    let y = 13
+                </code>
+                <code>
+                    const x = 42
+                </code>
+                <p>
+                    These syntax variables can be used to declare local, global, and block global variables. <em>(see References tab for more details)</em>.
+                </p>
+            </article>      
+        </section>
+
+        <section id="data_types" class="main-section">
+            <header>Data Types</header>
+            <article>
+                <p>
+                    JavaScript variables can hold many various data types. The latest ECMAScript standard defines seven data types: 
+                </p>
+                <ul>
+                    <li>Strings. "Howdy"</li>
+                    <li>Numbers. 42 or 3.14159.</li>
+                    <li>Booleans. True and False.</li>
+                    <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                    <li>undefined. A top-level property whose value is undefined.</li>
+                    <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                    <li>and Object</li>
+                </ul>
+                <code>
+                    var length = 16; // Number var lastName = "Johnson"; // String var x = {firstName:"John", lastName:"Doe"}; // Object
+                </code>
+                <p>
+                    Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and 
+                    functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as 
+                    procedures that your application can perform.
+                </p>
+            </article>  
+        </section>
+
+        <section id="conditionals" class="main-section">
+            <header>Conditionals</header>
+            <article>
+                <p>Conditional Statements (also known as if statements) are used when you want to perform different actions for different decisions.
+                    YUse the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement 
+                    if the condition is false. An if statement looks as follows:
+                </p>
+                <code>
+                    if (condition) { block of code to be executed if the condition is true } else { block of code to be executed if the condition is false }
+                </code>
+                <p>
+                    The condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. 
+                    If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, 
+                    including further nested if statements.
+                </p>
+                <p> 
+                    You may also compound the statements using "else if" to have multiple conditions tested in sequence, as follows:
+                </p>
+                <code>
+                    if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+                    } else if (condition_n) { statement_n; } else { statement_last; }
+                </code>
+                <p>
+                    In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, 
+                    group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements.
+                    It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. 
+                </p>
+            </article>  
+        </section>
+
+        <section id="loops" class="main-section">
+            <header>Loops</header>
+            <article>
+                <p>
+                    Loops can execute a block of code a number of times, and are handy, if you want to run the same code over and over again, each time with a different value.
+                    Often this is the case when working with arrays and objects. JavaScript supports different kinds of loops:
+                </p>
+                <ul>
+                    <li>for - loops through a block of code a number of times</li>
+                    <li>for/in - loops through the properties of an object</li>
+                    <li>while - loops through a block of code while a specified condition is true</li>
+                    <li>do/while - also loops through a block of code while a specified condition is true</li>
+                </ul>
+                <p>
+                    Below is an example of a While loop. The while loop loops through a block of code as long as a specified condition is true.
+                </p>
+                <code>
+                    while (i < 10) { text += "The number is " + i; i++; }
+                </code>
+                <p>
+                    In the example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10.
+                </p>
+                <p>
+                    <em><strong>If you forget to increase the variable used in the condition, the loop will never end. This will crash your browser.</strong></em>
+                </p>
+            </article>  
+        </section>
+
+        <section id="functions" class="main-section">
+            <header>Functions</header>
+            <article>
+                <p>
+                    A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" 
+                    invokes it (calls it). Take the given code below:
+                </p>
+                <code>
+                    function myFunction(p1, p2) { return p1 * p2; // The function returns the product of p1 and p2 }
+                </code>
+                <p>
+                    A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+                </p>
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                    <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                </ul>
+                <p>The code inside the function will execute when "something" invokes (calls) the function</p>
+                <code>
+                    var x = myFunction(4, 3); // Function is called, return value will end up in x function myFunction(a, b) { return a * b; // Function returns the product of a and b }
+                </code>
+                <p>
+                    The result will be <code>12</code>
+                </p>
+            </article>  
+        </section>
+        <section id="references" class="main-section">
+            <header>References</header>
+            <article>
+                <p>
+                    All the above documentation is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>.
+                </p>
+            </article>  
+        </section>
+    </main>
+
+
+</body>
+</html>
